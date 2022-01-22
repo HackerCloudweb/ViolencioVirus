@@ -4,6 +4,7 @@ from sqlite3 import Row
 from tkinter import *
 import tkinter as tk
 import time
+import os
 from tkinter import font
 from isort import file
 from matplotlib.pyplot import text
