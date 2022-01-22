@@ -6,7 +6,7 @@ Python 3 for linux and libraries
 
 git for windows or some linux tools for windows Like Tkinter for the grafic part
 
-Binaries made up with C++ and GTK
+Binaries made up with C++ 
 
 System dll made with dll and Visual Studio Code
 
