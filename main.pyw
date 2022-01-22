@@ -189,6 +189,8 @@ def SI():
         sintomasTexto = Label(sintomas, bg="gray", text="Racismo").pack()
         sintomasTexto = Label(sintomas, bg="gray", text="Sexismo").pack()
         sintomasTexto = Label(sintomas, bg="gray", text="Superficialidad").pack()
+        sintomasTexto = Label(sintomas, bg="gray", text="Pereza").pack()
+        sintomasTexto = Label(sintomas, bg="gray", text="*Adicción al móvil*").pack()
 
         sintomas.mainloop()
     #botón
