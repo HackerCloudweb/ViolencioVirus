@@ -31,7 +31,7 @@ root.geometry(posicion)
 
 #texto 
 Principal = Label(root, bg="gray").pack()
-Texto1 = Label(root, bg="gray", text="Si quieres ejecutarlo pulsa <Yes> y si no,").pack()
+Texto1 = Label(root, bg="gray", text="Si quieres ejecutarlo pulsa <Si> y si no,").pack()
 Texto1 = Label(root, bg="gray", text=" simplemente pulsa <No> y nada pasará").pack()
 
 #funciones
@@ -57,14 +57,15 @@ def SI():
     root.destroy()
 
     happy = "😃"
-    angry = "😡"
+    angry = "😠"
+    superAngry = "😡"
 
     #texto
-    Texto1 = Label(ventana, bg="gray", text="Estoy de mal humor, ¿Qué debo hacer?")
-    Texto1.place(x=110, y=40)
-    Texto1 = Label(ventana, bg="gray", text=angry)
-    Texto1.configure(font=(20))
-    Texto1.place(x=225, y=60)
+    Text1 = Label(ventana, bg="gray", text="Estoy de mal humor, ¿Qué debo hacer?")
+    Text1.place(x=110, y=40)
+    Text2 = Label(ventana, bg="gray", text=angry)
+    Text2.configure(font=(20))
+    Text2.place(x=225, y=60)
 
     
     #Input
@@ -74,181 +75,56 @@ def SI():
     #función de probar
     def Probar():
         if (queHacer.get() == "1"):
-            gracias = Tk()
-            #gracias ventana
-            gracias.title("Gracias")
-            gracias.geometry("500x200")
-            gracias.config(bg="gray")
-            gracias.resizable(0, 0)
-
-            ancho_gracias = 500
-            alto_gracias = 200
-
-            x_gracias = gracias.winfo_screenwidth() // 2 - ancho_gracias // 2
-            y_gracias = gracias.winfo_screenheight() // 2 - alto_gracias // 2
-
-            posicion = str(ancho_gracias) + "x" + str(alto_gracias) + "+" + str(x_gracias) + "+" + str(y_gracias)
-            gracias.geometry(posicion)
-
-            #texto gracias
-            TextoGracias = Label(gracias, bg="gray", text="gracias, ahora esoy" + happy).pack()
-            time.sleep(0.01)
+            Text2.configure(text=happy)
             ventana.config(bg="green")
-
-            gracias.mainloop()
-
-            gracias.destroy()
-
+            time.sleep(0.01)
+            Text1.config(bg="green")
+            time.sleep(0.01)
+            Text2.config(bg="green")
         elif (queHacer.get() == "2"):
-            gracias = Tk()
-            #gracias ventana
-            gracias.title("Gracias")
-            gracias.geometry("500x200")
-            gracias.config(bg="gray")
-            gracias.resizable(0, 0)
-
-            ancho_gracias = 500
-            alto_gracias = 200
-
-            x_gracias = gracias.winfo_screenwidth() // 2 - ancho_gracias // 2
-            y_gracias = gracias.winfo_screenheight() // 2 - alto_gracias // 2
-
-            posicion = str(ancho_gracias) + "x" + str(alto_gracias) + "+" + str(x_gracias) + "+" + str(y_gracias)
-            gracias.geometry(posicion)
-
-            #texto gracias
-            TextoGracias = Label(gracias, bg="gray", text="gracias, ahora esoy" + happy).pack()
-            time.sleep(0.01)
+            Text2.configure(text=happy)
             ventana.config(bg="green")
-
-            gracias.mainloop()
-
-            gracias.destroy()
+            time.sleep(0.01)
+            Text1.config(bg="green")
+            time.sleep(0.01)
+            Text2.config(bg="green")
         elif (queHacer.get() == "3"):
-            gracias = Tk()
-            #gracias ventana
-            gracias.title("Gracias")
-            gracias.geometry("500x200")
-            gracias.config(bg="gray")
-            gracias.resizable(0, 0)
-
-            ancho_gracias = 500
-            alto_gracias = 200
-
-            x_gracias = gracias.winfo_screenwidth() // 2 - ancho_gracias // 2
-            y_gracias = gracias.winfo_screenheight() // 2 - alto_gracias // 2
-
-            posicion = str(ancho_gracias) + "x" + str(alto_gracias) + "+" + str(x_gracias) + "+" + str(y_gracias)
-            gracias.geometry(posicion)
-
-            #texto gracias
-            TextoGracias = Label(gracias, bg="gray", text="gracias, ahora esoy" + happy).pack()
-            time.sleep(0.01)
+            Text2.configure(text=happy)
             ventana.config(bg="green")
-
-            gracias.mainloop()
-
-            gracias.destroy()
+            time.sleep(0.01)
+            Text1.config(bg="green")
+            time.sleep(0.01)
+            Text2.config(bg="green")
         elif (queHacer.get() == "5"):
-            gracias = Tk()
-            #gracias ventana
-            gracias.title("Gracias")
-            gracias.geometry("500x200")
-            gracias.config(bg="gray")
-            gracias.resizable(0, 0)
-
-            ancho_gracias = 500
-            alto_gracias = 200
-
-            x_gracias = gracias.winfo_screenwidth() // 2 - ancho_gracias // 2
-            y_gracias = gracias.winfo_screenheight() // 2 - alto_gracias // 2
-
-            posicion = str(ancho_gracias) + "x" + str(alto_gracias) + "+" + str(x_gracias) + "+" + str(y_gracias)
-            gracias.geometry(posicion)
-
-            #texto gracias
-            TextoGracias = Label(gracias, bg="gray", text="gracias, ahora esoy" + happy).pack()
-            time.sleep(0.01)
+            Text2.configure(text=happy)
             ventana.config(bg="green")
-
-            gracias.mainloop()
-
-            gracias.destroy()
+            time.sleep(0.01)
+            Text1.config(bg="green")
+            time.sleep(0.01)
+            Text2.config(bg="green")
         elif (queHacer.get() == "7"):
-            gracias = Tk()
-            #gracias ventana
-            gracias.title("Gracias")
-            gracias.geometry("500x200")
-            gracias.config(bg="gray")
-            gracias.resizable(0, 0)
-
-            ancho_gracias = 500
-            alto_gracias = 200
-
-            x_gracias = gracias.winfo_screenwidth() // 2 - ancho_gracias // 2
-            y_gracias = gracias.winfo_screenheight() // 2 - alto_gracias // 2
-
-            posicion = str(ancho_gracias) + "x" + str(alto_gracias) + "+" + str(x_gracias) + "+" + str(y_gracias)
-            gracias.geometry(posicion)
-
-            #texto gracias
-            TextoGracias = Label(gracias, bg="gray", text="gracias, ahora esoy" + happy).pack()
-            time.sleep(0.01)
+            Text2.configure(text=happy)
             ventana.config(bg="green")
-
-            gracias.mainloop()
-
-            gracias.destroy()
+            time.sleep(0.01)
+            Text1.config(bg="green")
+            time.sleep(0.01)
+            Text2.config(bg="green")
         elif (queHacer.get() == "9"):
-            gracias = Tk()
-            #gracias ventana
-            gracias.title("Gracias")
-            gracias.geometry("500x200")
-            gracias.config(bg="gray")
-            gracias.resizable(0, 0)
-
-            ancho_gracias = 500
-            alto_gracias = 200
-
-            x_gracias = gracias.winfo_screenwidth() // 2 - ancho_gracias // 2
-            y_gracias = gracias.winfo_screenheight() // 2 - alto_gracias // 2
-
-            posicion = str(ancho_gracias) + "x" + str(alto_gracias) + "+" + str(x_gracias) + "+" + str(y_gracias)
-            gracias.geometry(posicion)
-
-            #texto gracias
-            TextoGracias = Label(gracias, bg="gray", text="gracias, ahora esoy" + happy).pack()
-            time.sleep(0.01)
+            Text2.configure(text=happy)
             ventana.config(bg="green")
-
-            gracias.mainloop()
-
-            gracias.destroy()
+            time.sleep(0.01)
+            Text1.config(bg="green")
+            time.sleep(0.01)
+            Text2.config(bg="green")
         else:
+            Text2.configure(text=superAngry)
+            Text1.config(bg="red")
+            time.sleep(0.01)
+            Text2.config(bg="red")
+            time.sleep(0.01)
             ventana.config(bg="red")
-            time.sleep(0.2)
-
-            mal = Tk()
-            mal.title("Mal")
-            mal.geometry("500x200")
-            mal.resizable(0, 0)
-            mal.config(bg="gray")
-
-            ancho_mal = 500
-            alto_mal = 200
-
-            x_mal = mal.winfo_screenwidth() // 2 - ancho_mal // 2
-            y_mal = mal.winfo_screenheight() // 2 - alto_mal // 2
-
-            posicion = str(ancho_mal) + "x" + str(alto_mal) + "+" + str(x_mal) + "+" + str(y_mal)
-            mal.geometry(posicion)
-
-            Texto1 = Label(mal, bg="gray", text="Incorrecto, Ahora estoy más enfadado" + angry).pack() 
-            
-            mal.mainloop()
 
     #función de opciones
-
     def Opciones():
         
         opciones = Tk()
@@ -289,7 +165,6 @@ def SI():
 
         #function de matar todo
         def matarTodoF():
-            ventana.destroy()
             sintomas.destroy()
 
         #matar todo
@@ -330,9 +205,8 @@ def SI():
 def noEjecutar():
     time.sleep(0.01)
     root.destroy()
-
 #botones
-ejecutar = Button(root, bg="white", command=SI, text="Yes").place(x=100, y=100)
+ejecutar = Button(root, bg="white", command=SI, text="Si").place(x=100, y=100)
 NoEjecutar = Button(root, bg="white", command=noEjecutar, text="No").place(x=200, y=100)
 
 
