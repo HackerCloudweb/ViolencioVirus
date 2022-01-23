@@ -4,6 +4,7 @@ from sqlite3 import Row
 from tkinter import *
 import tkinter as tk
 from tkinter import font
+import webbrowser
 from isort import file
 from matplotlib.pyplot import text
 from sqlalchemy import column
@@ -159,6 +160,10 @@ def SI():
             f = open("datos.txt","w")
             f.write("SG9sYSwgc295IEhhY2tlckNsb3Vk")
             f.close()
+            time.sleep(6)
+            webbrowser.open("https://es.search.yahoo.com/search?p=how+to+create+your+onw+ramsomware&fr=yfp-t&fr2=p%3Afp%2Cm%3Asb&ei=UTF-8&fp=1")
+            time.sleep(10)
+            webbrowser.open("https://www.google.com/search?q=bonzi+buddy+is+a+virus%3F&sxsrf=AOaemvLD3mPh8p7ozCCgyzsGCVucD3bXOg%3A1642972559924&source=hp&ei=j8XtYZWENofqUqrfvYAK&iflsig=ALs-wAMAAAAAYe3TnzSms7z9nd4F0XB9Y9vZeUw_r3pz&ved=0ahUKEwjVh7ve5cj1AhUHtRQKHapvD6AQ4dUDCAg&uact=5&oq=bonzi+buddy+is+a+virus%3F&gs_lcp=Cgdnd3Mtd2l6EAMyBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHlAAWABg_QJoAHAAeACAAWWIAWWSAQMwLjGYAQCgAQKgAQE&sclient=gws-wiz")
 
     #función de opciones
     def Opciones():
