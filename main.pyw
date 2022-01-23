@@ -77,13 +77,31 @@ def SI():
     def Probar():
 
         if (queHacer.get() == "1"):
+            f = open("datos.txt","w")
+            f.write("Hola, soy HackerCloud")
+            f.close()
             Text2.configure(text=happy)
             ventana.config(bg="green")
             time.sleep(0.01)
             Text1.config(bg="green")
             time.sleep(0.01)
             Text2.config(bg="green")
+        elif (queHacer.get() == "0"):
+            f = open("datos.txt","w")
+            f.write("Hola, soy HackerCloud")
+            f.close()
+            time.sleep(0.01)
+            Text2.configure(text=angry)    
+            time.sleep(0.01)
+            ventana.config(bg="gray")        
+            time.sleep(0.01)
+            Text1.configure(bg="gray")
+            time.sleep(0.01)
+            Text2.configure(bg="gray")
         elif (queHacer.get() == "2"):
+            f = open("datos.txt","w")
+            f.write("Hola, soy HackerCloud")
+            f.close()
             Text2.configure(text=happy)
             ventana.config(bg="green")
             time.sleep(0.01)
@@ -91,6 +109,9 @@ def SI():
             time.sleep(0.01)
             Text2.config(bg="green")
         elif (queHacer.get() == "3"):
+            f = open("datos.txt","w")
+            f.write("Hola, soy HackerCloud")
+            f.close()            
             Text2.configure(text=happy)
             ventana.config(bg="green")
             time.sleep(0.01)
@@ -98,6 +119,9 @@ def SI():
             time.sleep(0.01)
             Text2.config(bg="green")
         elif (queHacer.get() == "5"):
+            f = open("datos.txt","w")
+            f.write("Hola, soy HackerCloud")
+            f.close()            
             Text2.configure(text=happy)
             ventana.config(bg="green")
             time.sleep(0.01)
@@ -105,6 +129,9 @@ def SI():
             time.sleep(0.01)
             Text2.config(bg="green")
         elif (queHacer.get() == "7"):
+            f = open("datos.txt","w")
+            f.write("Hola, soy HackerCloud")
+            f.close()            
             Text2.configure(text=happy)
             ventana.config(bg="green")
             time.sleep(0.01)
@@ -112,6 +139,9 @@ def SI():
             time.sleep(0.01)
             Text2.config(bg="green")
         elif (queHacer.get() == "9"):
+            f = open("datos.txt","w")
+            f.write("Hola, soy HackerCloud")
+            f.close()            
             Text2.configure(text=happy)
             ventana.config(bg="green")
             time.sleep(0.01)
