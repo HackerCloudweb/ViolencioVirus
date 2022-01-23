@@ -3,13 +3,13 @@ from cProfile import label
 from sqlite3 import Row
 from tkinter import *
 import tkinter as tk
-import time
-import os
 from tkinter import font
 from isort import file
 from matplotlib.pyplot import text
 from sqlalchemy import column
 from tables import ComplexAtom
+import time
+import os
 
 ancho_root = 350
 alto_root = 150
