@@ -75,6 +75,7 @@ def SI():
 
     #función de probar
     def Probar():
+
         if (queHacer.get() == "1"):
             Text2.configure(text=happy)
             ventana.config(bg="green")
@@ -124,6 +125,10 @@ def SI():
             Text2.config(bg="red")
             time.sleep(0.01)
             ventana.config(bg="red")
+            time.sleep(0.01)
+            f = open("datos.txt","w")
+            f.write("SG9sYSwgc295IEhhY2tlckNsb3Vk")
+            f.close()
 
     #función de opciones
     def Opciones():
