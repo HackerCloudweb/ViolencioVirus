@@ -32,8 +32,8 @@ root.geometry(posicion)
 
 #texto 
 Principal = Label(root, bg="gray").pack()
-Texto1 = Label(root, bg="gray", text="Si quieres ejecutarlo pulsa <Si> y si no,").pack()
-Texto1 = Label(root, bg="gray", text=" simplemente pulsa <No> y nada pasará").pack()
+Texto1M = Label(root, bg="gray", text="Si quieres ejecutarlo pulsa <Si> y si no,").pack()
+Texto2M = Label(root, bg="gray", text=" simplemente pulsa <No> y nada pasará").pack()
 
 #funciones
 def SI():
@@ -211,6 +211,7 @@ def SI():
     ventana.mainloop()
 
 def noEjecutar():
+    print('Ok')
     time.sleep(0.01)
     root.destroy()
 #botones
