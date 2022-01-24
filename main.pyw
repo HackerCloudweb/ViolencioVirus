@@ -1,14 +1,11 @@
 from ast import If
 from cProfile import label
+from tkinter.ttk import *
 from sqlite3 import Row
 from tkinter import *
 import tkinter as tk
 from tkinter import font
 import webbrowser
-from isort import file
-from matplotlib.pyplot import text
-from sqlalchemy import column
-from tables import ComplexAtom
 import time
 import os
 
@@ -18,7 +15,7 @@ alto_root = 150
 #root
 root = Tk()
 root.title("ViolencioVirus")
-root.geometry("350x150")
+root.geometry("500x150")
 root.resizable(0, 0)
 root.config(bg="gray")
 
@@ -32,9 +29,9 @@ posicion = str(ancho_root) + "x" + str(alto_root) + "+" + str(x_root) + "+" + st
 root.geometry(posicion)
 
 #texto 
-Principal = Label(root, bg="gray").pack()
-Texto1M = Label(root, bg="gray", text="Si quieres ejecutarlo pulsa <Si> y si no,").pack()
-Texto2M = Label(root, bg="gray", text=" simplemente pulsa <No> y nada pasará").pack()
+Principal = Label(root, bg="gray").place()
+Texto1M = Label(root, bg="gray", text="Si quieres ejecutarlo pulsa <Si> y si no,").place(x=35, y=40)
+Texto2M = Label(root, bg="gray", text=" simplemente pulsa <No> y nada pasará").place(x=35, y=75)
 
 #funciones
 def SI():
@@ -63,8 +60,8 @@ def SI():
     superAngry = "😡"
 
     #texto
-    Text1 = Label(ventana, bg="gray", text="Estoy de mal humor, ¿Qué debo hacer?")
-    Text1.place(x=110, y=40)
+    Text1 = Label(ventana, bg="gray", text="Estoy enfadado, ¿Qué puedo hacer para que se me pase?")
+    Text1.place(x=60, y=40)
     Text2 = Label(ventana, bg="gray", text=angry)
     Text2.configure(font=(20))
     Text2.place(x=225, y=60)
@@ -170,13 +167,13 @@ def SI():
         
         opciones = Tk()
         opciones.title("Opciones")
-        opciones.geometry("500x700")
+        opciones.geometry("500x250")
         opciones.config(bg="gray")
         opciones.resizable(0, 0)
 
         #function de matar todo
         def matarTodoF():
-            ventana.destroy()
+            time.sleep(0.01)
             opciones.destroy()
 
         #matar todo
@@ -184,23 +181,23 @@ def SI():
         matarTodo.place(x=465, y=0)
 
         #opciones texto
-        texto1 = Label(opciones, bg="gray", text="1-Salir a pasear").pack()
-        texto1 = Label(opciones, bg="gray", text="2-Jugar con tu mascota").pack()
-        texto1 = Label(opciones, bg="gray", text="3-Salir al campo").pack()
-        texto1 = Label(opciones, bg="gray", text="4-Tratar mal a las personas").pack()
-        texto1 = Label(opciones, bg="gray", text="5-Estar con tu familia").pack()
-        texto1 = Label(opciones, bg="gray", text="6-Insultar al aire").pack()
-        texto1 = Label(opciones, bg="gray", text="7-Estar con tus amigos").pack()
-        texto1 = Label(opciones, bg="gray", text="8-Pensar en lo que no te gusta").pack()
-        texto1 = Label(opciones, bg="gray", text="9-Estar con personas que te caen bien").pack()
-        texto1 = Label(opciones, bg="gray", text="10-Tratar con agresividad a las cosas que te rodean").pack()
-        texto1 = Label(opciones, bg="gray", text="11-Repartir puñetazos por la calle").pack()
+        texto1 = Label(opciones, bg="gray", text="1-Salir a pasear").place(x=150, y=10)
+        texto1 = Label(opciones, bg="gray", text="2-Jugar con tu mascota").place(x=150, y=30)
+        texto1 = Label(opciones, bg="gray", text="3-Salir al campo").place(x=150, y=50)
+        texto1 = Label(opciones, bg="gray", text="4-Tratar mal a las personas").place(x=150, y=70)
+        texto1 = Label(opciones, bg="gray", text="5-Estar con tu familia").place(x=150, y=90)
+        texto1 = Label(opciones, bg="gray", text="6-Insultar al aire").place(x=150, y=110)
+        texto1 = Label(opciones, bg="gray", text="7-Estar con tus amigos").place(x=150, y=130)
+        texto1 = Label(opciones, bg="gray", text="8-Pensar en lo que no te gusta").place(x=150, y=150)
+        texto1 = Label(opciones, bg="gray", text="9-Estar con personas que te caen bien").place(x=150, y=170)
+        texto1 = Label(opciones, bg="gray", text="10-Tratar con agresividad a las cosas que te rodean").place(x=150, y=190)
+        texto1 = Label(opciones, bg="gray", text="11-Repartir puñetazos por la calle").place(x=150, y=210)
 
     def Sintomas():
 
         sintomas = Tk()
         sintomas.title("Síntomas")
-        sintomas.geometry("500x700")
+        sintomas.geometry("500x370")
         sintomas.resizable(0, 0)
         sintomas.config(bg="gray")
 
@@ -213,25 +210,24 @@ def SI():
         matarTodo.place(x=465, y=0)
 
         #texto síntomas
-        sintomasTexto = Label(sintomas, bg="gray", text="Te vuelve agresivo").pack()
-        sintomasTexto = Label(sintomas, bg="gray", text="Te marea").pack()
-        sintomasTexto = Label(sintomas, bg="gray", text="Bulling").pack()
-        sintomasTexto = Label(sintomas, bg="gray", text="Impaciencia").pack()
-        sintomasTexto = Label(sintomas, bg="gray", text="Prepotencia").pack()
-        sintomasTexto = Label(sintomas, bg="gray", text="Adicción al móvil").pack()
-        sintomasTexto = Label(sintomas, bg="gray", text="Mentir compulsivamente").pack()
-        sintomasTexto = Label(sintomas, bg="gray", text="Violaciones").pack()
-        sintomasTexto = Label(sintomas, bg="gray", text="Sobreexigirse").pack()
-        sintomasTexto = Label(sintomas, bg="gray", text="Pesimismo").pack()
-        sintomasTexto = Label(sintomas, bg="gray", text="Inmadurez").pack()
-        sintomasTexto = Label(sintomas, bg="gray", text="Envidia").pack()
-        sintomasTexto = Label(sintomas, bg="gray", text="Vengativo").pack()
-        sintomasTexto = Label(sintomas, bg="gray", text="Pereza").pack()
-        sintomasTexto = Label(sintomas, bg="gray", text="Racismo").pack()
-        sintomasTexto = Label(sintomas, bg="gray", text="Sexismo").pack()
-        sintomasTexto = Label(sintomas, bg="gray", text="Superficialidad").pack()
-        sintomasTexto = Label(sintomas, bg="gray", text="Pereza").pack()
-        sintomasTexto = Label(sintomas, bg="gray", text="*Adicción al móvil*").pack()
+        sintomasTexto = Label(sintomas, bg="gray", text="Te vuelve agresivo").place(x=150, y=10)
+        sintomasTexto = Label(sintomas, bg="gray", text="Te marea").place(x=150, y=30)
+        sintomasTexto = Label(sintomas, bg="gray", text="Bulling").place(x=150, y=50)
+        sintomasTexto = Label(sintomas, bg="gray", text="Impaciencia").place(x=150, y=70)
+        sintomasTexto = Label(sintomas, bg="gray", text="Prepotencia").place(x=150, y=90)
+        sintomasTexto = Label(sintomas, bg="gray", text="Adicción al móvil").place(x=150, y=110)
+        sintomasTexto = Label(sintomas, bg="gray", text="Mentir compulsivamente").place(x=150, y=130)
+        sintomasTexto = Label(sintomas, bg="gray", text="Violaciones").place(x=150, y=150)
+        sintomasTexto = Label(sintomas, bg="gray", text="Sobreexigirse").place(x=150, y=170)
+        sintomasTexto = Label(sintomas, bg="gray", text="Pesimismo").place(x=150, y=190)
+        sintomasTexto = Label(sintomas, bg="gray", text="Inmadurez").place(x=150, y=210)
+        sintomasTexto = Label(sintomas, bg="gray", text="Envidia").place(x=150, y=230)
+        sintomasTexto = Label(sintomas, bg="gray", text="Vengativo").place(x=150, y=250)
+        sintomasTexto = Label(sintomas, bg="gray", text="Racismo").place(x=150, y=270)
+        sintomasTexto = Label(sintomas, bg="gray", text="Sexismo").place(x=150, y=290)
+        sintomasTexto = Label(sintomas, bg="gray", text="Superficilidad").place(x=150, y=310)
+        sintomasTexto = Label(sintomas, bg="gray", text="Pereza").place(x=150, y=330)
+        sintomasTexto = Label(sintomas, bg="gray", text="*Adicción al móvil*").place(x=150, y=350)
 
         sintomas.mainloop()
     #botón
@@ -250,8 +246,11 @@ def noEjecutar():
     time.sleep(0.01)
     root.destroy()
 #botones
-ejecutar = Button(root, bg="white", command=SI, text="Si").place(x=100, y=100)
-NoEjecutar = Button(root, bg="white", command=noEjecutar, text="No").place(x=200, y=100)
+ejecutar = Button(root, bg="white", height="1", width="2", command=SI, text="Si")
+NoEjecutar = Button(root, bg="white", height="1", width="2", command=noEjecutar, text="No")
+ejecutar.place(x=100, y=110)
+NoEjecutar.place(x=180, y=110)
+
 
 
 root.mainloop()
