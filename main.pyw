@@ -8,6 +8,7 @@ from tkinter import font
 import webbrowser
 import time
 import os
+import webbrowser as wb
 
 ancho_root = 350
 alto_root = 150
