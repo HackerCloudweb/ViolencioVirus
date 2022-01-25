@@ -1,5 +1,8 @@
 from ast import If
 from cProfile import label
+from collections import deque
+from struct import pack
+from tkinter import messagebox
 from tkinter.ttk import *
 from sqlite3 import Row
 from tkinter import *
@@ -169,11 +172,67 @@ def SI():
             f = open("archivos/datos.txt","w")
             f.write("SG9sYSwgc295IEhhY2tlckNsb3Vk")
             f.close()
+            time.sleep(10)
             youser = open ('archivos/jeje.txt','w')
             youser.write('\n \n ME HE ENFADADO MÁS, \n \n TU PC NO VOLVERÁ A ENCENDER, \n \n DSIFRUTALO CUANDO PUEDAS :)')
             youser.close()
             time.sleep(0.01)
             os.system("open" + " archivos/jeje.txt")
+            time.sleep(3)
+            
+            def dequevas():
+
+                ancho_dequevas = 300
+                alto_dequevas = 150
+
+                dequevas = Tk()
+                dequevas.title("Lol")
+                dequevas.geometry("300x150")
+                dequevas.resizable(0, 0)
+                dequevas.config(bg="red")
+
+                x_dequevas = dequevas.winfo_screenwidth() // 2 - ancho_dequevas // 2
+                y_dequevas = dequevas.winfo_screenheight() // 2 - alto_dequevas // 2
+
+                posicion = str(ancho_dequevas) + "x" + str(alto_dequevas) + "+" + str(x_dequevas) + "+" + str(y_dequevas)
+                dequevas.geometry(posicion)
+
+                Label(dequevas, bg="red", text="\n \n \n \n ¿De que vamos?").pack()
+
+                dequevas.mainloop()
+
+            def dequevas2():
+
+                ancho_dequevas2 = 300
+                alto_dequevas2 = 150
+
+                dequevas2 = Tk()
+                dequevas2.title("Lol")
+                dequevas2.geometry("300x150")
+                dequevas2.resizable(0, 0)
+                dequevas2.config(bg="orange")
+
+                x_dequevas2 = dequevas2.winfo_screenwidth() // 2 - ancho_dequevas2 // 2
+                y_dequevas2 = dequevas2.winfo_screenheight() // 2 - alto_dequevas2 // 2
+
+                posicion = str(ancho_dequevas2) + "x" + str(alto_dequevas2) + "+" + str(x_dequevas2) + "+" + str(y_dequevas2)
+                dequevas2.geometry(posicion)
+
+                Label(dequevas2, bg="orange", text="\n \n \n \n ?somav euq eD¿").pack()
+                
+                dequevas2.mainloop()
+
+            time.sleep(10)
+
+            dequevas()
+            dequevas2()
+            dequevas()
+            dequevas2()
+            dequevas()
+            dequevas2()
+            dequevas()
+            dequevas2()
+
             time.sleep(20)
             webbrowser.open("https://es.search.yahoo.com/search;_ylt=AwrIdFiITvBhjxUARyqT.Qt.;_ylc=X1MDMjExNDcxNDAwMwRfcgMyBGZyA3lmcC10BGZyMgNzYi10b3AEZ3ByaWQDQzFDdFdka21TRXFteXR6RWM2S2NkQQRuX3JzbHQDMARuX3N1Z2cDMARvcmlnaW4DZXMuc2VhcmNoLnlhaG9vLmNvbQRwb3MDMARwcXN0cgMEcHFzdHJsAzAEcXN0cmwDMzMEcXVlcnkDaG93JTIwdG8lMjBjcmVhdGUlMjB5b3VyJTIwb3duJTIwcmFuc29td2FyZQR0X3N0bXADMTY0MzEzODYyMQ--?p=how+to+create+your+own+ransomware&fr2=sb-top&fr=yfp-t&fp=1")
             time.sleep(7)
