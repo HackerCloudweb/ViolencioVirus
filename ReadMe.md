@@ -11,3 +11,6 @@ Binaries made up with dll on codeblocks
 System dll made with dll and Visual Studio Code
 
 Copyrigth 2022 by HackerCloud | All rigths reserved
+
+
+*To use the version that damages the system, just change the path of files/data.txt to / in the case of linux or c:\ in the case of windows*
