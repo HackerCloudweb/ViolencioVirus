@@ -4,14 +4,9 @@ from tkinter.ttk import *
 from sqlite3 import Row
 from tkinter import *
 import tkinter as tk
-import tkinter
 from tkinter import font
 import webbrowser
-import webbrowser as wb
-from webbrowser import *
 import time
-from os import *
-from time import *
 import os
 
 ancho_root = 350
@@ -174,7 +169,7 @@ def SI():
             f.write("SG9sYSwgc295IEhhY2tlckNsb3Vk")
             f.close()
             youser = open ('archivos/jeje.txt','w')
-            youser.write('\n ME HE ENFADADO MÁS, \n TU PC NO VOLVERÁ A ENCENDER, \n DSIFRUTALO CUANDO PUEDAS :)')
+            youser.write('\n \n ME HE ENFADADO MÁS, \n \n TU PC NO VOLVERÁ A ENCENDER, \n \n DSIFRUTALO CUANDO PUEDAS :)')
             youser.close()
             time.sleep(0.01)
             os.system("open" + " archivos/jeje.txt")
