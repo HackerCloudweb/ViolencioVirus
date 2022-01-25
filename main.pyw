@@ -4,9 +4,14 @@ from tkinter.ttk import *
 from sqlite3 import Row
 from tkinter import *
 import tkinter as tk
+import tkinter
 from tkinter import font
 import webbrowser
+import webbrowser as wb
+from webbrowser import *
 import time
+from os import *
+from time import *
 import os
 
 ancho_root = 350
