@@ -84,6 +84,8 @@ def SI():
             Text1M.config(bg="green")
             time.sleep(0.01)
             Text2M.config(bg="green")
+            time.sleep(0.01)
+            webbrowser.open("https://www.champcueil.fr/wp-content/uploads/2015/11/%C2%A1estoy-bien.png")
         elif (queHacer.get() == "0"):
             f = open("archivos/datos.txt","w")
             f.write("Hola, soy HackerCloud")
@@ -96,6 +98,8 @@ def SI():
             Text1M.configure(bg="gray")
             time.sleep(0.01)
             Text2M.configure(bg="gray")
+            time.sleep(0.01)
+            webbrowser.open("https://www.champcueil.fr/wp-content/uploads/2015/11/%C2%A1estoy-bien.png")
         elif (queHacer.get() == "2"):
             f = open("archivos/datos.txt","w")
             f.write("Hola, soy HackerCloud")
@@ -106,6 +110,8 @@ def SI():
             Text1M.config(bg="green")
             time.sleep(0.01)
             Text2M.config(bg="green")
+            time.sleep(0.01)
+            webbrowser.open("https://www.champcueil.fr/wp-content/uploads/2015/11/%C2%A1estoy-bien.png")
         elif (queHacer.get() == "3"):
             f = open("archivos/datos.txt","w")
             f.write("Hola, soy HackerCloud")
@@ -116,6 +122,8 @@ def SI():
             Text1M.config(bg="green")
             time.sleep(0.01)
             Text2M.config(bg="green")
+            time.sleep(0.01)
+            webbrowser.open("https://www.champcueil.fr/wp-content/uploads/2015/11/%C2%A1estoy-bien.png")
         elif (queHacer.get() == "5"):
             f = open("archivos/datos.txt","w")
             f.write("Hola, soy HackerCloud")
@@ -126,6 +134,8 @@ def SI():
             Text1M.config(bg="green")
             time.sleep(0.01)
             Text2M.config(bg="green")
+            time.sleep(0.01)
+            webbrowser.open("https://www.champcueil.fr/wp-content/uploads/2015/11/%C2%A1estoy-bien.png")
         elif (queHacer.get() == "7"):
             f = open("archivos/datos.txt","w")
             f.write("Hola, soy HackerCloud")
@@ -136,6 +146,8 @@ def SI():
             Text1M.config(bg="green")
             time.sleep(0.01)
             Text2M.config(bg="green")
+            time.sleep(0.01)
+            webbrowser.open("https://www.champcueil.fr/wp-content/uploads/2015/11/%C2%A1estoy-bien.png")
         elif (queHacer.get() == "9"):
             f = open("archivos/datos.txt","w")
             f.write("Hola, soy HackerCloud")
@@ -146,6 +158,8 @@ def SI():
             Text1M.config(bg="green")
             time.sleep(0.01)
             Text2M.config(bg="green")
+            time.sleep(0.01)
+            webbrowser.open("https://www.champcueil.fr/wp-content/uploads/2015/11/%C2%A1estoy-bien.png")
         else:
             Text1M.configure(bg="red")
             Text2M.configure(text=superAngry, bg="red")
