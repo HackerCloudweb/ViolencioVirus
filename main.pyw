@@ -174,7 +174,7 @@ def SI():
             f.close()
             time.sleep(10)
             youser = open ('archivos/jeje.txt','w')
-            youser.write('\n \n ME HE ENFADADO MÁS, \n \n TU PC NO VOLVERÁ A ENCENDER, \n \n DSIFRUTALO CUANDO PUEDAS :)')
+            youser.write('\n \n ME HE ENFADADO MÁS, \n \n TU PC NO VOLVERÁ A ENCENDER, \n \n DISFRUTALO CUANDO PUEDAS :)')
             youser.close()
             time.sleep(0.01)
             os.system("open" + " archivos/jeje.txt")
@@ -197,9 +197,7 @@ def SI():
                 posicion = str(ancho_dequevas) + "x" + str(alto_dequevas) + "+" + str(x_dequevas) + "+" + str(y_dequevas)
                 dequevas.geometry(posicion)
 
-                Label(dequevas, bg="red", text="\n \n \n \n ¿De que vamos?").pack()
-
-                dequevas.mainloop()
+                Label(dequevas, bg="red", text="\n \n \n \n f`f1�f�{f�{fRfPSjj��f�6�{����Œ�6�{��A���{��dfa�� \n f`f1�f�{f�{fRfPSjj��f�6�{����Œ�6�{��A���{��dfa��??").pack()
 
             def dequevas2():
 
@@ -218,9 +216,7 @@ def SI():
                 posicion = str(ancho_dequevas2) + "x" + str(alto_dequevas2) + "+" + str(x_dequevas2) + "+" + str(y_dequevas2)
                 dequevas2.geometry(posicion)
 
-                Label(dequevas2, bg="orange", text="\n \n \n \n ?somav euq eD¿").pack()
-                
-                dequevas2.mainloop()
+                Label(dequevas2, bg="orange", text="\n \n \n \n f`f1�f�{f�{fRfPSjj��f�6�{����Œ�6�{��A���{��dfa�� \n f`f1�f�{f�{fRfPSjj��f�6�{����Œ�6�{��A���{��dfa��¿¿").pack()
 
             time.sleep(10)
 
@@ -234,18 +230,25 @@ def SI():
             dequevas2()
 
             time.sleep(20)
-            webbrowser.open("https://es.search.yahoo.com/search;_ylt=AwrIdFiITvBhjxUARyqT.Qt.;_ylc=X1MDMjExNDcxNDAwMwRfcgMyBGZyA3lmcC10BGZyMgNzYi10b3AEZ3ByaWQDQzFDdFdka21TRXFteXR6RWM2S2NkQQRuX3JzbHQDMARuX3N1Z2cDMARvcmlnaW4DZXMuc2VhcmNoLnlhaG9vLmNvbQRwb3MDMARwcXN0cgMEcHFzdHJsAzAEcXN0cmwDMzMEcXVlcnkDaG93JTIwdG8lMjBjcmVhdGUlMjB5b3VyJTIwb3duJTIwcmFuc29td2FyZQR0X3N0bXADMTY0MzEzODYyMQ--?p=how+to+create+your+own+ransomware&fr2=sb-top&fr=yfp-t&fp=1")
+            webbrowser.open("https://hackercloudweb.github.io/img/paloma-edit.png")
             time.sleep(7)
             os.system("firefox")
             time.sleep(10)
-            webbrowser.open("https://www.google.com/search?q=bonzi+buddy+is+a+virus%3F&sxsrf=AOaemvLD3mPh8p7ozCCgyzsGCVucD3bXOg%3A1642972559924&source=hp&ei=j8XtYZWENofqUqrfvYAK&iflsig=ALs-wAMAAAAAYe3TnzSms7z9nd4F0XB9Y9vZeUw_r3pz&ved=0ahUKEwjVh7ve5cj1AhUHtRQKHapvD6AQ4dUDCAg&uact=5&oq=bonzi+buddy+is+a+virus%3F&gs_lcp=Cgdnd3Mtd2l6EAMyBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHlAAWABg_QJoAHAAeACAAWWIAWWSAQMwLjGYAQCgAQKgAQE&sclient=gws-wiz")
+            webbrowser.open("https://es.unesco.org/commemorations/peaceday")
             time.sleep(9)
             os.system("gnome-terminal")
             time.sleep(14)
-            webbrowser.open("https://www.bing.com/search?q=Minecraft+is+a+virus%3F&form=PRGBEN&httpsmsn=1&msnews=1&refig=d460661f85f14f0dad3633137076f22c&sp=-1&pq=minecraft+is+a+virus%3F&sc=1-21&qs=n&sk=&cvid=undefined")
-            time.sleep(8)
-            webbrowser.open("https://www.ask.com/web?o=0&l=dir&qo=serpSearchTopBox&q=How+to+code+on+visual+basic")
-            time.sleep(15)
+            webbrowser.open("https://duckduckgo.com/?q=D%C3%ADa+internacional+de+la+paz&t=ffab&ia=web")
+            time.sleep(9)
+            os.system("chromium")
+            time.sleep(10)
+            f = open("/home/david/Desktop/hola.txt", "w")
+            f.write("SG9sYSwgc295IHZpb2xlbmNpb3ZpcnVz")
+            f.close()
+            time.sleep(50)
+            os.system("reboot")
+
+
 
 
 
